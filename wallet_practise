@@ -1,0 +1,49 @@
+// SPDX-License-Identifier: GPL-3.0
+pragma solidity >=0.7.0 <0.9.0;
+
+contract wallet 
+{
+    
+    uint btc;
+    uint rune;
+    uint mana;
+    uint ftm;
+    uint algo;
+    uint near;
+
+    constructor() public
+    {
+        btc=1;
+        rune=3000;
+        mana=1400;
+        ftm=700;
+        algo=600;
+        near=7000;
+    }
+    function get_btc() view public returns(uint)
+    {
+        return btc;
+    }
+    function get_rune() view public returns(uint)
+    {
+        return rune;
+    }
+    function get_mana() view public returns(uint)
+    {
+        return mana;
+    }
+    function get_ftm() view public returns(uint)
+    {
+        return ftm;
+    }
+    function get_algo() view public returns(uint)
+    {
+        return algo;
+    }
+    function get_near() view public returns(uint)
+    {
+        return near;
+    }
+
+}
+
