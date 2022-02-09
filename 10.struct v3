@@ -1,0 +1,32 @@
+// SPDX-License-Identifier: GPL-3.0
+
+pragma solidity >=0.7.0 <0.9.0; 
+
+struct bce {
+    string name;
+    uint roll;
+    string gender;
+}
+struct bct {
+    string name;
+    uint roll;
+    string gender;
+}
+contract college 
+{
+   bce public civil;
+   bct public computer;
+   function get_info_bce(string memory _name,uint b,string memory gen) public 
+   {
+       civil.name=_name;
+       civil.roll=b;
+       civil.gender=gen;
+   }
+   function get_info_bct(string memory _name,uint b,string memory gen) public 
+   {
+       computer.name=_name;
+       computer.roll=b;
+       computer.gender=gen;
+   }
+
+}
