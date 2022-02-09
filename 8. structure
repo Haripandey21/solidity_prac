@@ -1,0 +1,20 @@
+// SPDX-License-Identifier: GPL-3.0
+
+pragma solidity >=0.7.0 <0.9.0; 
+
+struct project {
+    uint hasd_id;
+    string add;
+}
+contract demo {
+
+    project public s1;
+
+    function deploy (uint a, string memory b) public 
+    {
+        s1.hasd_id=a;
+        s1.add=b;
+
+        
+    }
+}
