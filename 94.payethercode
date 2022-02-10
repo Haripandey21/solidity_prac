@@ -1,0 +1,32 @@
+// SPDX-License-Identifier: GPL-3.0
+
+pragma solidity >=0.7.0 <0.9.0; 
+
+contract pay
+{
+    address payable user=payable(0x583031D1113aD414F02576BD6afaBfb302140225);
+    function payether() payable public 
+    {
+
+    }
+    function getblc() view public returns(uint)
+    {
+        return address(this).balance;
+    }
+
+    function transfer() public
+    {
+        user.transfer(10 ether);
+        user.
+
+    }
+
+}
+
+
+
+
+
+
+
+    
