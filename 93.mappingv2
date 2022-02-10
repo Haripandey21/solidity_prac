@@ -1,0 +1,25 @@
+// SPDX-License-Identifier: GPL-3.0
+
+pragma solidity >=0.7.0 <0.9.0; 
+
+contract college {
+
+    struct student {
+        string name;
+        uint class;
+    }
+
+    mapping(uint=>student) public data; 
+
+    function getter(uint _rollno,string memory _name,uint _class) public 
+    {
+        data[_rollno]=student(_name,_class);
+        
+    }
+
+}
+
+
+
+
+    
