@@ -1,0 +1,46 @@
+// SPDX-License-Identifier: GPL-3.0
+pragma solidity ^0.8.11;
+
+contract realstatedeal {
+    address public real_owner;
+
+
+    constructor ()
+    {
+        real_owner=msg.sender;
+    }
+     
+     function house_location()public pure  returns(string memory  )
+     {   
+         
+         string memory land="nayabazar,kirtipur,kathmandu";
+         return land;
+
+     }
+      function price_in_Nrs()public pure  returns(uint  )
+     {   
+         uint pp=50000000;
+         return pp;
+
+     }
+
+     modifier verifyowner()
+     {
+         require(msg.sender==real_owner,"you are not a realowner!! get lost");
+         _;
+     }
+
+function set_new_owner(address _ooo) public verifyowner()
+    {
+        require(_ooo!=address(0),"sir sorry,you can't change owner !!! ");
+        real_owner=_ooo;
+
+    }
+
+ 
+
+
+}
+
+
+
