@@ -1,0 +1,26 @@
+// SPDX-License-Identifier: GPL-3.0
+
+pragma solidity ^0.8.11;
+
+contract test {
+
+uint get=10;
+
+function getnum(uint a) public view
+{
+    if(a<get)
+    {
+        revert("insufficient balance..hehe try later ");
+    }
+}
+    
+function tiger(uint b) public view 
+{
+    require(b>get,"insufficient balance less than 0");
+}
+    
+
+}
+
+
+
