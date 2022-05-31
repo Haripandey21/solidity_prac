@@ -1,1 +1,6 @@
-blockchain will be the future. u are going to live in metaverse soon buying nfts and this internet is going to web3.so Rip web2 
+
+"If you don’t design your own life plan,
+chances are you’ll fall into someone else’s plan.
+And guess what they have planned for you?Not much."
+
+So let's do this 😆😆  
